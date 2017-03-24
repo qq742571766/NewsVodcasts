@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/lay_16">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/is_un_collect"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_18" />
+
+    <LinearLayout
+        android:id="@+id/dialog_un_collect_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/lay_8">
+
+        <Button
+            android:id="@+id/dialog_un_collect_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/OK"
+            android:textSize="@dimen/font_18" />
+
+        <Button
+            android:id="@+id/dialog_un_collect_no"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/NO"
+            android:textSize="@dimen/font_18" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/dialog_un_collect_prb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/lay_8"
+        android:visibility="gone"/>
+
+</LinearLayout>

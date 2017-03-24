@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/lay_16"
+            android:drawableLeft="@drawable/ic_account_circle"
+            android:drawablePadding="@dimen/lay_8"
+            android:gravity="center"
+            android:text="@string/tourist"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_22" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvUsername"
+            android:text="@string/register"
+            android:textColor="@color/dim"
+            android:textSize="@dimen/font_14" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="@dimen/size_1"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/btnRegister"
+            android:layout_alignTop="@+id/btnRegister"
+            android:layout_marginBottom="@dimen/lay_12"
+            android:layout_marginTop="@dimen/lay_12"
+            android:layout_toLeftOf="@+id/btnRegister"
+            android:background="?attr/dividerVertical" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvUsername"
+            android:layout_toLeftOf="@+id/divider"
+            android:text="@string/login"
+            android:textColor="@color/dim"
+            android:textSize="@dimen/font_14" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvUsername"
+            android:layout_toLeftOf="@+id/divider"
+            android:text="@string/logout"
+            android:textColor="@color/dim"
+            android:textSize="@dimen/font_14"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/pink" />
+
+     收藏的新闻列表
+    <com.example.administrator.videonews.ui.likes.LikesListView
+        android:id="@+id/likesListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/lay_8" />
+
+</LinearLayout>

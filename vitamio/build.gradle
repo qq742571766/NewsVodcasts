@@ -1,0 +1,29 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+}
+//ANDROID_BUILD_MIN_SDK_VERSION=11
+//ANDROID_BUILD_TARGET_SDK_VERSION=19
+//ANDROID_BUILD_TOOLS_VERSION=20.0.0
+//ANDROID_BUILD_SDK_VERSION=19
+android {
+    compileSdkVersion 19
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 19
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            jniLibs.srcDirs = ['libs']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+
+    }
+
+}
